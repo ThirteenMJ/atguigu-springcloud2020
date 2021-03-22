@@ -15,7 +15,6 @@ import org.springframework.context.annotation.Configuration;
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableDiscoveryClient
 @EnableFeignClients
-@MapperScan("com.atguigu.springcloud.alibaba.dao")
 public class SeataAccountMainApp2003 {
 
     public static void main(String[] args) {

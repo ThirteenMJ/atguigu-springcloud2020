@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: seata-storage-service
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: fsp_tx_group
     nacos:
       discovery:
         server-addr: localhost:8848
@@ -20,6 +24,3 @@ logging:
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml
-
-
-
