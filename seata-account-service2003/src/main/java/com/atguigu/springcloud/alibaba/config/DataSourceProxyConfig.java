@@ -19,6 +19,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 public class DataSourceProxyConfig {
+
     @Value("${mybatis.mapperLocations}")
     private String mapperLocations;
 
@@ -43,3 +44,4 @@ public class DataSourceProxyConfig {
     }
 
 }
+

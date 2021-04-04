@@ -12,8 +12,8 @@ import java.math.BigDecimal;
  * Date: 2021/3/21 12:30
  */
 @FeignClient(value = "seata-account-service")
-public interface AccountSerice {
-
-    @PostMapping("/storage/decrease")
-    CommonResult decrease(@RequestParam("userId")Long userId, @RequestParam("money") BigDecimal money);
+public interface AccountService {
+    @PostMapping(value = "/account/decrease")
+    CommonResult decrease(@RequestParam("userId") Long userId, @RequestParam("money") BigDecimal money);
 }
+

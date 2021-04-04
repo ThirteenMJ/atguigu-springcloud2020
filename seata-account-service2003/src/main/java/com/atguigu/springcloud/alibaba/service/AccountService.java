@@ -9,8 +9,11 @@ import java.math.BigDecimal;
  * Date: 2021/3/21 22:00
  */
 public interface AccountService {
+
     /**
      * 扣减账户余额
      */
-    void decrease(@RequestParam("userId") Long userId, @RequestParam("money")BigDecimal money);
+    void decrease(@RequestParam("userId") Long userId, @RequestParam("money") BigDecimal money);
 }
+
+

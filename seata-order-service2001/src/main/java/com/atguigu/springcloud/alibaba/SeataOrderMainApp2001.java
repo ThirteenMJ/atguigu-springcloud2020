@@ -19,3 +19,4 @@ public class SeataOrderMainApp2001{
         SpringApplication.run(SeataOrderMainApp2001.class, args);
     }
 }
+

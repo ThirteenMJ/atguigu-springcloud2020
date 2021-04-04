@@ -12,7 +12,7 @@
     <update id="decrease">
         update seata_storage.t_storage
         set used = used + #{count}, residue = residue - #{count}
-        where productId = #{productId}
+        where product_id = #{productId}
     </update>
 
 
