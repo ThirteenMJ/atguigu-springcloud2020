@@ -42,4 +42,8 @@ public class IdGeneratorSnowflake {
     public synchronized long snowflakeId() {
         return snowflake.nextId();
     }
+
+    public static void main(String[] args) {
+        System.out.println(new IdGeneratorSnowflake().snowflakeId());
+    }
 }
